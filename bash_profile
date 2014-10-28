@@ -85,5 +85,5 @@ alias vv="fasd -i -e vim"
 
 ######################  PATH + Private bin
 if [ -d ${SCRIPT_PATH}/bin ] ; then
-    PATH="${SCRIPT_PATH}/bin:${SCRIPT_PATH}/bin/git-flow:$PATH"
+    PATH="${SCRIPT_PATH}/bin:${SCRIPT_PATH}/bin/git-flow:$HOME/bin:$PATH"
 fi

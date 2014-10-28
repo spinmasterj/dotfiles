@@ -132,3 +132,26 @@ alias svncf="svnstf C"
 alias svnurl="svn info | grep URL | awk  -F': ' '{ print \$2 }'"
 alias svnver="change-svn-wc-format.py"
 
+####################### General dev
+alias mfdev="ssh vagrant@mainframe.dev"
+alias mfb="ssh mainframe.bravo"
+alias ssvn="ssh svn.sierrabravo.net"
+alias dvm="ssh sis-datavm.bravo"
+alias pdvm="ssh 10.10.11.64"
+alias pp="pushd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe/tools/; ./reset -c pick.config.xml; popd;"
+alias PP="pushd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe/tools/; ./reset -c pick.config.xml; popd;"
+alias pps="pushd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe/tools/; ./reset --account STAGE -c pick.config.xml; popd;"
+alias search-pick="pushd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe/tools/; ./search -a JC-BP -c pick.config.xml; popd;"
+alias vup='vagrant up --provision"'
+alias mf="cd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe"
+alias mp="cd ~/Documents/MAINFRAME.ServerConfiguration/Perform"
+alias ma="cd ~/Documents/MAINFRAME.ServerConfiguration/Api"
+alias ms="cd ~/Documents/MAINFRAME.ServerConfiguration/SalesforceApi"
+alias v="vagrant"
+alias vsp="vagrant ssh perform"
+alias vsm="vagrant ssh mainframe"
+alias cu="composer update"
+alias vu="pushd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe/ && vagrant up && popd"
+
+# prevent Ctrl-d from closing the session
+set -o ignoreeof
