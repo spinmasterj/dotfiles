@@ -9,6 +9,7 @@ alias la="ll -a"
 alias df="df -h"
 alias h="history"
 alias g="git"
+alias gfff="git flow feature finish"
 
 alias time="date;time"
 
@@ -154,6 +155,7 @@ alias vsp="vagrant ssh perform"
 alias vsm="vagrant ssh mainframe"
 alias cu="composer update"
 alias vu="pushd ~/Documents/MAINFRAME.ServerConfiguration/Mainframe/ && vagrant up && popd"
-
+alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+alias git-remove-merged="git branch --merged | grep -v '\*\|master\|develop' | xargs -n 1 git branch -d"
 # prevent Ctrl-d from closing the session
 set -o ignoreeof
